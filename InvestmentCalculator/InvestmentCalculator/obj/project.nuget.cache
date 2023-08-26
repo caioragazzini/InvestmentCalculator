@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nafmFOXVwhUf0QVlojyZXkt6We1/j0V8/o0COEY/QSTHR2KSo6sRcoIsqarVbT8ygn8dFjSgMP6+YIZDkVHv1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\caiov\\Desktop\\InvestmentCalculator\\InvestmentCalculator\\InvestmentCalculator\\InvestmentCalculator.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caiov\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
