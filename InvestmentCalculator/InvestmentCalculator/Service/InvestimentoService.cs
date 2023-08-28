@@ -4,17 +4,22 @@ namespace InvestmentCalculator.Service
 {
     public class InvestimentoService : IInvestimentoService
     {
+        private readonly ConstantesInvestimento _constantes;
+
+        public InvestimentoService(ConstantesInvestimento constantes)
+        {
+            _constantes = constantes;
+        }
         public InvestimentoResultado CalcularInvestimento(Investimento investimento)
         {
-            decimal CDI = 0.009m; // 0,9%
-            decimal TB = 1.08m; // 108%
 
+           
             decimal valorBruto = investimento.ValorInicial;
             decimal valorLiquido = investimento.ValorInicial;
 
             for (int mes = 0; mes < investimento.PrazoMeses; mes++)
             {
-                decimal rendimentoMensal = valorBruto * CDI * TB;
+                decimal rendimentoMensal = valorBruto * _constantes.CDI * _constantes.TB;
                 valorBruto += rendimentoMensal;
                 valorLiquido += rendimentoMensal - CalcularImposto(rendimentoMensal, mes);
             }
