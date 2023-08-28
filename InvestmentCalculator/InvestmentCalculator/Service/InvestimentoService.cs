@@ -1,4 +1,5 @@
-﻿using InvestmentCalculator.Models;
+﻿using InvestmentCalculator.Infrastructure;
+using InvestmentCalculator.Models;
 
 namespace InvestmentCalculator.Service
 {

@@ -1,3 +1,4 @@
+using InvestmentCalculator.Infrastructure;
 using InvestmentCalculator.Service;
 
 var builder = WebApplication.CreateBuilder(args);
