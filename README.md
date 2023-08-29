@@ -18,6 +18,17 @@ Este projeto consiste em uma aplicação web que permite calcular o valor bruto 
  - Angular CLI: 16.2.0
  - Node: 18.17.1
  - Package Manager: npm 8.19.3
+---------------------------------------------------------
+- Package                         Version
+- @angular-devkit/architect       0.1602.0
+- @angular-devkit/build-angular   16.2.0
+- @angular-devkit/core            16.2.0
+- @angular-devkit/schematics      16.2.0
+- @angular/cli                    16.2.0
+- @schematics/angular             16.2.0
+- rxjs                            7.8.1
+- typescript                      5.1.6
+- zone.js                         0.13.1
 
 ## Como Executar
 
@@ -26,23 +37,23 @@ Este projeto consiste em uma aplicação web que permite calcular o valor bruto 
    git clone https://github.com/caioragazzini/InvestmentCalculator.git
    ```
 
-#### 🎲 Rodando o BackEnd 
+#### 🎲 Rodando o BackEnd (InvestmentCalculator)
  - O servidor do BackEnd tem que estar configurado o Localhost - acesse <https://localhost:7217/>
  - O BackEnd pode ser testado através do Swagger acessando https://localhost:7217/swagger/index.html
   ```bash
    $ cd seu-repositorio 
    - Certifique-se de ter o .NET 6 SDK instalado.
-   - Navegue até a pasta InvestmentCalculatorBackend:  
+   - Navegue até a pasta InvestmentCalculator:  
    $ cd InvestmentCalculatorBackend
    - Inicie o servidor:
    $ dotnet run
   ```
-#### 🎲 Rodando o FrontEnd (Angular):
+#### 🎲 Rodando o FrontEnd (InvestmentCalculatorFront):
  ```bash
 - Certifique-se de ter o Angular CLI instalado: 
 $ npm install -g @angular/cli
-- Navegue até a pasta InvestmentCalculatorFrontend:
-$ cd InvestmentCalculatorFrontend
+- Navegue até a pasta InvestmentCalculatorFront:
+$ cd InvestmentCalculatorFront
 - Instale as dependências:
 $ npm install
 - Inicie o servidor:
