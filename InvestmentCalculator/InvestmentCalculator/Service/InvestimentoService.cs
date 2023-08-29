@@ -5,9 +5,9 @@ namespace InvestmentCalculator.Service
 {
     public class InvestimentoService : IInvestimentoService
     {
-        private readonly ConstantesInvestimento _constantes;
+        private readonly IConstantesInvestimento _constantes;
 
-        public InvestimentoService(ConstantesInvestimento constantes)
+        public InvestimentoService(IConstantesInvestimento constantes)
         {
             _constantes = constantes;
         }

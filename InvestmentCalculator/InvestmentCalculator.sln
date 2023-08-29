@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentCalculator", "InvestmentCalculator\InvestmentCalculator.csproj", "{40B4EAF3-C946-42E5-97EA-F8B546C830B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentCalculator", "InvestmentCalculator\InvestmentCalculator.csproj", "{40B4EAF3-C946-42E5-97EA-F8B546C830B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestmentCalculator.Tests", "InvestmentCalculator.Tests\InvestmentCalculator.Tests.csproj", "{EB330339-82B5-4E2F-B998-B532BE6E96EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{40B4EAF3-C946-42E5-97EA-F8B546C830B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40B4EAF3-C946-42E5-97EA-F8B546C830B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40B4EAF3-C946-42E5-97EA-F8B546C830B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB330339-82B5-4E2F-B998-B532BE6E96EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB330339-82B5-4E2F-B998-B532BE6E96EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB330339-82B5-4E2F-B998-B532BE6E96EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB330339-82B5-4E2F-B998-B532BE6E96EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

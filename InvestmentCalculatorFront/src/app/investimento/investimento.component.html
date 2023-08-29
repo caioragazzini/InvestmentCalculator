@@ -1,0 +1,34 @@
+<div class="container mt-5">
+  <h1>Calculadora de Investimento</h1>
+  <form [formGroup]="investimentoForm" (ngSubmit)="calcularInvestimento()">
+    <div class="mb-3">
+      <label for="valorInicial" class="form-label">Valor Inicial:</label>
+      <input type="number" id="valorInicial" class="form-control" formControlName="valorInicial" required min="0.01">
+      <small *ngIf="isValorInicialInvalid() && investimentoForm.get('valorInicial')?.touched" class="text-danger">Valor inicial inválido. Deve ser maior que zero.</small>
+    </div>
+    <div class="mb-3">
+      <label for="prazoMeses" class="form-label">Prazo em Meses:</label>
+      <input type="number" id="prazoMeses" class="form-control" formControlName="prazoMeses" required min="1.99">
+      <small *ngIf="isPrazoMesesInvalid() && investimentoForm.get('prazoMeses')?.touched" class="text-danger"> Prazo em meses inválido. Deve ser maior que um.</small>
+    </div>
+   
+    <div class="d-flex justify-content-between mt-3">
+      <button type="submit" class="btn btn-primary">Calcular</button>
+      <button type="button" class="btn btn-secondary" (click)="limparCampos()">Limpar</button>
+    </div>
+  </form>
+
+  <div *ngIf="resultado" class="container mt-4">
+    <h2>Resultado do Investimento</h2>
+  
+    <div class="row mt-3">
+      <div class="col input-valor">
+        <h4>Valor Bruto:</h4>
+        <h5> <p>{{ resultado?.valorBruto | currency:'BRL' }}</p></h5>
+      </div>
+      <div class="col input-valor">
+        <h4>Valor Líquido:</h4>
+        <h5>  <p>{{ resultado?.valorLiquido | currency:'BRL' }}</p></h5>
+      </div>
+    </div>
+  </div>
