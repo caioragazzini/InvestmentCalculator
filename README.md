@@ -9,9 +9,11 @@ Este projeto consiste em uma aplicação web que permite calcular o valor bruto 
 
 ## Tecnologias Utilizadas
 ### Backend:
-  - .NET6
   - Microsoft Visual Studio Community 2022 (64-bit) - Current
   - Version 17.7.0
+  - ASP.NET Core Web API
+  - Framework .NET 6.0
+ 
 ### Frontend: 
  - Angular CLI: 16.2.0
  - Node: 18.17.1
